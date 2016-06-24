@@ -255,6 +255,14 @@ input.ng-invalid {
   padding: 10px;
   font-size: 13px;
   color: #595959;
+  width: 70%;
+}
+.demo .help {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.demo .help p {
+  margin-bottom: 8px;
 }
 .left-list-dropdown-menu {
   left: 60px !important;
@@ -1345,4 +1353,21 @@ a:hover {
     opacity: 0;
     transform: scale(2.5);
   }
+}
+.help-block {
+  font-size: 12px;
+}
+.has-error .form-control {
+  border-color: #ff6969;
+  background-color: #fff3f3;
+}
+.has-error .form-control :focus {
+  border-color: #ff6969;
+}
+.input-in-icon {
+  position: absolute;
+  right: 17px;
+  top: 8px;
+  background: none;
+  color: #1fa60b;
 }
