@@ -92,7 +92,7 @@ define(function (require) {
 
 
         this.checkTabsScale = function () {
-            if (Number(window.getComputedStyle(document.getElementById("tabScrollor")).width.slice(0, -2)) < ($rootScope.tabs.length * 128)) {
+            if (Number(window.getComputedStyle(document.getElementById("tabScrollor")).width.slice(0, -2)) < ($rootScope.tabs ? 0 : ($rootScope.tabs.length * 128)) ) {
                 angular.element(document.getElementById("turnleft")).css("display", "block");
                 angular.element(document.getElementById("turnright")).css("display", "block");
                 var tabs = $rootScope.tabs;
