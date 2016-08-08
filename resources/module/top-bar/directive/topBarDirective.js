@@ -59,7 +59,7 @@ define(function (require) {
         '$state',
         'appConstant', "ajaxService", "getCookieService", 'register',
         function ($scope, $rootScope, $state, appConstant, ajaxService, cookie, register) {
-            var sessionId = cookie.getCookie("CRMSESSIONID");
+            var sessionId = "ass";
 
             if(sessionId === ''){
                 $state.go('login');

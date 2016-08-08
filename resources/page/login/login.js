@@ -92,6 +92,9 @@ define(['ng_animate', 'css!login_css'], function () {
                         //console.log($rootScope.sessionFlag);
                         $rootScope.overlay = false;
                         $state.go('home');
+                    }else{
+                        //模拟一下假的登录
+                        $state.go('home');
                     }
                 });
             };    
