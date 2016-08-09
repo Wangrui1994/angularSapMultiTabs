@@ -119,7 +119,7 @@ define(function (require) {
                     postObj.pageNo = $scope.pageSet.currentPage;
                     postObj.pageCount = $scope.pageSet.numPerPage;
                     ajaxService.AjaxPost(postObj, $scope.conditions.ajaxUrl).then(function (result) {
-                    	  $scope.$$childTail.$$childHead.resultList = result;
+                    	$scope.$$childTail.$$childHead.resultList = result;
                     });
                 };
                 //打开一个新的tab   交易消费明细详情页

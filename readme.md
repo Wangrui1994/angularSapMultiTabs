@@ -11,7 +11,7 @@
 这里面显示左边导航的就是用到page节点里面的数据page节点里面又有三个节点，后台管理，报表中心，交易系统，我们主要讨论后台管理节点里面的数据。
  - 后台管理里面有一个childtree，里面的内容，就是后台管理页面的左边的导航里面的所有的内容。
  - 我们在组件栏里面的增加一个tab，则在getPages.do里面增加数据。我们要在showname为 组件 的节点中childtree属性数组中增加一个tab的对象。
-```
+```javascript
 {
       "code": "10005",
       "showName": "组件",
@@ -38,7 +38,7 @@
 - 然后下一步就是增加页面的html模版和controller文件了
 增加 newTabqwe.html 和 newTabqwe.js 。
 - 关于newTabqwe.js的结构也有一定的要求
-```
+```javascript
 define(function(require){
 var rtObj = {
       ctrl:"newtabCtrl",
@@ -53,7 +53,7 @@ return rtObj;
 });
 ``` 
 html文件则没有什么要求
-```
+```javascript
 <div> 
       <div>
             {{ hello }}
